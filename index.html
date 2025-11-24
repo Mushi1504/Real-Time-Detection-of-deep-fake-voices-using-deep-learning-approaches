@@ -1,0 +1,44 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<section class="banner_w3lspvt" id="home">
+	<div class="csslider infinity" id="slider1">
+	
+				<div class="banner-top">
+					<div class="overlay">
+						<div class="container">
+							<div class="w3layouts-banner-info text-center">
+								<h3 class="text-wh">DEEP FAKE AUDIO DETECTION</h3>
+								<h4 class="text-wh mx-auto my-4"><b>Upload Audio Recorded</b></h4>
+								<br>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+	</div>
+</section>
+
+
+<section class="blog py-5">
+	<div class="container py-md-5">
+		<h3 class="heading mb-sm-5 mb-4 text-center"> Our Services</h3>
+		<div class="row blog-grids">
+
+			<div class="col-lg-4 col-md-6 blog-right mt-lg-0 mt-5 pt-lg-0 pt-md-5">
+
+				<img src="{{ url_for('static', filename='images/Screenshot from 2024-09-24 15-41-17.png') }}" class="img-fluid" alt="">
+
+				<a href="{{ url_for('disease_prediction') }}">
+					<div class="blog-info">
+						<h4>DEEPFAKE VOICE DETECTION</h4>
+						<p class="mt-2">Click Here to Use Our Technology -----.</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+</html>
+
+{% endblock %}
